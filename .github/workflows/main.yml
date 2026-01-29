@@ -12,5 +12,5 @@ jobs:
    steps:
      - name: Checkout code
        uses: actions/checkout@v4
-     - name: Run echo
-       run: echo "Hello Github actions"
+     - name: Use secrets
+       run: echo ${{secrets.PASSWORD}}
