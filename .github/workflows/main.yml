@@ -5,8 +5,7 @@ on: push
 jobs:
   build:
     runs-on: ubuntu-latest
-
- steps:
+    steps:
     - name: Build image
       run: docker build -t myapp
 
